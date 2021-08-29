@@ -54,9 +54,11 @@
   background-color: var(--dark-blue) !important;
   border-color: var(--dark-blue) !important;
   border-radius: 25px !important;
+  transition: all 0.8s ease 0s;
 }
 
 .contact-btn:hover {
   background-color: var(--medium-blue) !important;
   border-color: var(--medium-blue) !important;
+  transition: all 0.8s ease 0s;
 }

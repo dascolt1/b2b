@@ -24,7 +24,9 @@ const Header = () => {
                 Services
               </Link>
             </Nav.Link>
-            <Button className="contact-btn">Contact Us</Button>
+            <Link className="contact-link" to="#contact-us">
+              <Button className="contact-btn">Contact Us</Button>
+            </Link>
           </Nav>
         </Container>
       </Navbar>
