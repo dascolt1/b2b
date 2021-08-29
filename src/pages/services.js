@@ -1,13 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import "bootstrap/dist/css/bootstrap.min.css"
 
-const Index = () => {
+const Services = () => {
   return (
     <Layout>
-      <h1>Home page</h1>
+      <h1>Services</h1>
     </Layout>
   )
 }
 
-export default Index
+export default Services
