@@ -1,12 +1,12 @@
 import React from "react"
-import { Navbar, Nav, Container } from "react-bootstrap"
+import { Navbar, Nav, Container, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 import "../styles/index.css"
 
 const Header = () => {
   return (
     <header>
-      <Navbar bg="light" variant="light">
+      <Navbar className="navbar-shadow" bg="light" variant="light">
         <Container>
           <Navbar.Brand>B2B</Navbar.Brand>
           <Nav className="ml-auto">
@@ -24,6 +24,7 @@ const Header = () => {
                 Services
               </Link>
             </Nav.Link>
+            <Button className="contact-btn">Contact Us</Button>
           </Nav>
         </Container>
       </Navbar>

@@ -27,6 +27,10 @@
   text-decoration: underline;
 }
 
+.navbar-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
 .main-content {
   width: 100vw;
 }
@@ -44,4 +48,15 @@
   text-align: center;
   padding: 1rem;
   font-size: 1.2rem;
+}
+
+.contact-btn {
+  background-color: var(--dark-blue) !important;
+  border-color: var(--dark-blue) !important;
+  border-radius: 25px !important;
+}
+
+.contact-btn:hover {
+  background-color: var(--medium-blue) !important;
+  border-color: var(--medium-blue) !important;
 }
