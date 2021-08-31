@@ -1,11 +1,22 @@
 import React from "react"
 import Layout from "../components/layout"
+import SearchBar from "../components/SearchBar"
 import "bootstrap/dist/css/bootstrap.min.css"
+import Report from "../../public/report.inline.svg"
 
 const Index = () => {
   return (
     <Layout>
-      <h1>Home page</h1>
+      <div className="home-page">
+        <div className="search-section">
+          <div>
+            <h3>Looking For Something?</h3>
+            <SearchBar />
+          </div>
+
+          <Report style={{ width: `300px`, height: "300px" }} />
+        </div>
+      </div>
     </Layout>
   )
 }
