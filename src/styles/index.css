@@ -13,6 +13,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: 80px; /* Set same as footer's height */
+}
+
 .links {
   text-decoration: none;
   color: var(--dark-blue);
@@ -22,9 +32,6 @@
 .links:hover {
   color: var(--light-blue);
   transition: all 0.8s ease 0s;
-}
-
-.active-class {
 }
 
 .navbar-shadow {
@@ -39,7 +46,6 @@
   background-color: var(--darkest-blue);
   color: var(--lightest-blue);
   position: absolute;
-  left: 0;
   bottom: 0;
   height: 80px;
   width: 100%;
@@ -78,4 +84,24 @@
   color: var(--darkest-blue);
   padding-bottom: 1.4rem;
   font-size: 3.2rem;
+}
+
+.products {
+  display: grid;
+  margin-top: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1.5em;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  width: 20rem;
+  box-shadow: 6px 8px 5px #778da9;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
 }
